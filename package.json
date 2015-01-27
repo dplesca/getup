@@ -1,0 +1,7 @@
+{
+  "name": "Get UP!",
+  "main": "index.html",
+  "window": {
+  	"toolbar": true
+  }
+}
