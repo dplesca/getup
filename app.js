@@ -3,6 +3,7 @@ $(function(){
     yourSound.loop = true;
     $('.start button').click(function(ev){
         $('.start').toggleClass('hidden');
+        $('.stop').toggleClass('hidden');
         $(".example").TimeCircles({
             "animation": "ticks",
             "count_past_zero": false,
@@ -24,7 +25,6 @@ $(function(){
         }).addListener(function(unit, value, total){
             if(!total){
                 yourSound.play();
-                $('.stop').toggleClass('hidden');
             }
         });
     });
